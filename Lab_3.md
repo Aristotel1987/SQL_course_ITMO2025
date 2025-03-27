@@ -123,9 +123,6 @@ INSERT INTO Sensors (sensor_type, installation_date) VALUES ('temp', '2023-01-01
 
 INSERT INTO Room (room_type, room_area, ceiling_height, glazing_area, external_wall_area, temperature_sensor_id, humidity_sensor_id, login) VALUES ('Kitchen', 20.5, 2.5, 5.0, 15.0, 1, 2, 'user1'), ('Living_Room', 25.0, 2.8, 10.0, 20.0, 2, 3, 'user2'), ('Bath_Room', 10.0, 2.4, 2.0, 7.0, NULL, 3, 'user3');
 INSERT INTO Flat (flat_number, login, room_id, latitude, longitude) VALUES (101, 'user1', 1, 40.7128, -74.0060), (102, 'user2', 2, 34.0522, -118.2437), (103, 'user3', 3, 51.5074, -0.1278);
-
-INSERT INTO Flat (flat_number, login, room_id, latitude, longitude) VALUES (101, 'user1', 1, 40.7128, -74.0060), (102, 'user2', 2, 34.0522, -118.2437), (103, 'user3', 3, 51.5074, -0.1278);
-
 INSERT INTO Observations (room_id, observation_time, temperature_sensor_id, temperature_reading, humidity_sensor_id, humidity_reading, outside_temperature) VALUES (1, '2023-01-10 10:00:00', 1, 22.5, 2, 55.0, 5.0), (2, '2023-01-11 11:00:00', 2, 21.0, 3, 60.0, 6.0), (3, '2023-01-12 12:00:00', 1, 23.0, 2, 58.0, 4.5);
 
 # JOIN запросы #
@@ -275,4 +272,4 @@ AND observation_time >= '2023-01-01';
 2. Очистим таблицу квартир:
 DELETE FROM Flat;
 # Выводы #
-В ходе выполнения задания на основе описания предметной области и построенной и заполненной пробными данными  Базы данных были изучены и опробованы различные виды использования оператора JOIN. Опробованы различные команды по добавлению, удалению и изменению данных. 
+В ходе выполнения задания на основе описания предметной области и построенной и заполненной пробными данными  Базы данных были изучены функциональные зависимости,и опробованы различные виды использования оператора JOIN. Опробованы различные команды по добавлению, удалению и изменению данных. 
